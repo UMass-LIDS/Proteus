@@ -1,0 +1,4 @@
+required_predictors:
+{('densenet121', 'CPU'): 9, ('densenet121', 'GPU_AMPERE'): 10, ('densenet121', 'VPU'): 9, ('densenet121', 'GPU_PASCAL'): 8, ('resnet18', 'VPU'): 1, ('mobilenet0.25', 'GPU_PASCAL'): 1, ('efficientnet-b0', 'CPU'): 1, ('resnest14', 'GPU_PASCAL'): 1}
+canary_dict:
+{('densenet121', 0): 1.0, ('efficientnet-b0', 1): 1.0, ('mobilenet0.25', 2): 1.0, ('resnest14', 3): 1.0, ('resnet18', 4): 1.0}

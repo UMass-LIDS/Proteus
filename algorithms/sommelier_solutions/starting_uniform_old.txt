@@ -1,0 +1,4 @@
+required_predictors:
+{('efficientnet-b5', 'CPU'): 2,('densenet201', 'CPU'): 2, ('mobilenet1.0', 'CPU'): 2, ('resnest269', 'CPU'): 2, ('resnet152_v1', 'CPU'): 2, ('resnest269', 'GPU_AMPERE'): 2, ('efficientnet-b5', 'GPU_AMPERE'): 2, ('densenet201', 'GPU_AMPERE'): 2, ('mobilenet1.0', 'GPU_AMPERE'): 2, ('resnet152_v1', 'GPU_AMPERE'): 2, ('efficientnet-b5', 'VPU'): 2, ('densenet201', 'VPU'): 2, ('mobilenet1.0', 'VPU'): 2, ('resnest269', 'VPU'): 2, ('resnet152_v1', 'VPU'): 2, ('resnest269', 'GPU_PASCAL'): 2, ('efficientnet-b5', 'GPU_PASCAL'): 2, ('densenet201', 'GPU_PASCAL'): 2, ('mobilenet1.0', 'GPU_PASCAL'): 2, ('resnet152_v1', 'GPU_PASCAL'): 2}
+canary_dict:
+{('densenet201', 0): 1.0, ('efficientnet-b5', 1): 1.0, ('mobilenet1.0', 2): 1.0, ('resnest269', 3): 1.0, ('resnet152_v1', 4): 1.0}

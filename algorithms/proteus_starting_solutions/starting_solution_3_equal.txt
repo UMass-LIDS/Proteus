@@ -1,0 +1,6 @@
+required_predictors:
+{('mobilenet1.0', 'VPU'): 2, ('mobilenet1.0', 'GPU_PASCAL'): 1, ('t5-small', 'CPU'): 2, ('t5-base', 'GPU_PASCAL'): 1, ('t5-small', 'VPU'): 1}
+canary_dict:
+{('GPU_PASCAL-0', 0): 1.0, ('GPU_PASCAL-1', 1): 1.0, ('GPU_PASCAL-2', 2): 0.7045726766715992, ('GPU_PASCAL-4', 2): 0.29542732332840077, ('GPU_PASCAL-8', 3): 1.0, ('VPU-3', 4): 1.0, ('GPU_PASCAL-3', 5): 1.0, ('GPU_PASCAL-9', 6): 1.0, ('GPU_PASCAL-7', 7): 1.0, ('GPU_AMPERE-9', 8): 1.0}
+ilp_x:
+{('mobilenet1.0', 'VPU-0'): 1, ('mobilenet1.0', 'GPU_PASCAL-5'): 1, ('t5-small', 'CPU-7'): 1, ('t5-base', 'GPU_PASCAL-7'): 1, ('t5-small', 'CPU-9'): 1}
