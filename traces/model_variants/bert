@@ -1,0 +1,12 @@
+roberta-base,97.9338843
+roberta-large,99.58677686
+albert-base-v2,95.97107438
+albert-large-v2,98.03719008
+albert-xlarge-v2,98.55371901
+albert-xxlarge-v2,100
+prajjwal1/bert-tiny,85.95041322
+prajjwal1/bert-mini,88.73966942
+prajjwal1/bert-small,92.66528926
+prajjwal1/bert-medium,92.56198347
+bert-base-uncased,96.59090909
+bert-large-uncased,98.03719008
