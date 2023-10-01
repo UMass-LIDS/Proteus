@@ -1,0 +1,13 @@
+{
+    "profiling_data": "profiling/aggregate_profiled.csv",
+    "trace_path": "traces/twitter/asplos/medium-normal_load/300",
+    "allowed_variants": "traces/model_variants_proteus_noscaling",
+    "model_allocation": "clipper",
+    "static_allocation": "algorithms/clipper_solutions/clipper_highacc_optimized.txt",
+    "job_scheduling": "canary_routing",
+    "batching": "aimd",
+    "fixed_seed": true,
+    "seed": 10,
+    "short_run": true,
+    "log_to_file": true
+}

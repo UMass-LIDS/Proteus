@@ -1,0 +1,16 @@
+{
+    "profiling_data": "profiling/aggregate_profiled.csv",
+    "trace_path": "traces/twitter/asplos/medium-normal_load/300",
+    "allowed_variants": "traces/model_variants",
+    "model_allocation": "ilp",
+    "static_allocation": "algorithms/proteus_starting_solutions/starting_solution.txt",
+    "job_scheduling": "canary_routing",
+    "batching": "accscale",
+    "beta": 1.05,
+    "ewma_decay": 1.6,
+    "fixed_seed": true,
+    "seed": 10,
+    "solve_interval": 10,
+    "short_run": false,
+    "log_to_file": true
+}

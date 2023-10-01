@@ -82,9 +82,7 @@ class Predictor:
         if self.max_batch_size == 0:
             self.busy = True
         
-        predictor_log = logging.FileHandler(f'logs/per_predictor/300ms/'
-                                                 f'{self.simulator.model_assignment}/'
-                                                 f'{self.id}.txt')
+        predictor_log = logging.FileHandler(f'logs/per_predictor/{self.id}.txt')
         predictor_log.setLevel(logging.INFO)
         self.predictor_log = logging.getLogger(self.id)
         self.predictor_log.addHandler(predictor_log)
