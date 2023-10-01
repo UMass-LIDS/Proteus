@@ -1,0 +1,16 @@
+certifi==2023.7.22
+charset-normalizer==3.3.0
+cloudpickle==2.2.1
+gurobipy==10.0.3
+gym==0.26.2
+gym-notices==0.0.8
+idna==3.4
+numpy==1.23.5
+pandas==2.1.1
+python-dateutil==2.8.2
+pytz==2023.3.post1
+requests==2.31.0
+scipy==1.11.3
+six==1.16.0
+tzdata==2023.3
+urllib3==2.0.5
