@@ -310,7 +310,7 @@ class Ilp(SchedulingAlgorithm):
                 m.addConstr(yp[i] == sum(p[i, j]*x[i, j] for j in models), 'c6_' + str(i))
                 m.addConstr(ypp[i] == sum(z[i, k]*s[k] for k in rtypes), 'c7_' + str(i))
 
-            if self.static is 'spec_acc':
+            if self.static == 'spec_acc':
                 required_predictors, canary_dict, _ = self.get_solution_from_file(self.starting_allocation)
                 m = self.add_spec_acc_constraints(m, x, accelerators, required_predictors)
 
