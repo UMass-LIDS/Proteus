@@ -1,0 +1,15 @@
+{
+    "profiling_data": "profiling/aggregate_profiled.csv",
+    "trace_path": "traces/twitter/asplos/zipf_exponential/300",
+    "allowed_variants": "traces/model_variants",
+    "model_allocation": "infaas_v2",
+    "job_scheduling": "infaas",
+    "batching": "infaas",
+    "infaas_slack": 0.05,
+    "infaas_downscale_slack": 0.6,
+    "fixed_seed": true,
+    "seed": 10,
+    "solve_interval": 10,
+    "short_run": false,
+    "log_to_file": true
+}

@@ -219,7 +219,7 @@ def main(args):
     logfile = open('logs/' + logfile_name, mode='w')
 
     rate_logger = logging.getLogger('Rate logger')
-    rate_loggerfile = os.path.join('logs', 'throughput', str(time.time()) + '_' +  model_assignment + '.csv')
+    rate_loggerfile = os.path.join('logs', 'throughput', model_assignment + '.csv')
     rate_logger.addHandler(logging.FileHandler(rate_loggerfile, mode='w'))
     rate_logger.setLevel(file_log_level)
     rate_logger.info(f'wallclock_time,simulation_time,demand,throughput,capacity,'
