@@ -1,0 +1,14 @@
+{
+    "profiling_data": "profiling/aggregate_profiled.csv",
+    "trace_path": "traces/twitter/asplos/zipf_exponential_bursty/300",
+    "allowed_variants": "traces/model_variants",
+    "model_allocation": "sommelier",
+    "static_allocation": "algorithms/sommelier_solutions/starting_optimized_new.txt",
+    "job_scheduling": "canary_routing",
+    "batching": "accscale",
+    "beta": 1.5,
+    "fixed_seed": true,
+    "seed": 10,
+    "solve_interval": 10,
+    "log_to_file": true
+}
