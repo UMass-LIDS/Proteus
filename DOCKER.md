@@ -35,9 +35,11 @@ To plot results, run the following inside the interactive Docker session:
 
 `python plotting/endtoend.py`
 
+This will generate a figure in the `figures` folder. 
+
 ## Copying results from Docker container
 
-This will generate a figure in the `figures` folder. It can be downloaded from the Docker container to your host machine using the following Docker command:
+You can download the generated figures from the Docker container to your host machine using the following Docker command:
 
 `docker cp <container_id>:/figures/timeseries_together.pdf <local_path>/timeseries_together.pdf`
 
