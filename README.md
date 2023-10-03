@@ -13,6 +13,8 @@ We strongly recommend using Method 2 if you want to use Proteus or the simulator
 
 Proteus uses the Gurobi optimization software to solve its MILP formulation. Although Gurobi requires a full-usage license, we have prepared a [Docker image](https://hub.docker.com/r/sohaibahmad759/proteus) with a pre-installed trial license to allow quick testing. However, we strongly recommend that you obtain a Gurobi license if you want to use Proteus.
 
+Follow the instructions [here](DOCKER.md) to run Proteus using Docker.
+
 ## Method 2: Local installation
 
 To use Proteus, we recommend obtaining a Gurobi license and creating a `conda` environment.
