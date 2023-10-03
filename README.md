@@ -7,6 +7,7 @@ You can test Proteus using two methods as described below.
 
 2. Installing Proteus locally using a `conda` environment and setting up a Gurobi license
 
+We strongly recommend using Method 2 if you want to use Proteus or the simulator for your experiments. However, if you want to quickly test Proteus, we recommend Method 1.
 
 ## Method 1: Docker
 
@@ -20,11 +21,11 @@ To use Proteus, we recommend obtaining a Gurobi license and creating a `conda` e
 
 You can clone the GitHub repo using:
 
-`https://github.com/UMass-LIDS/Proteus.git`
+`git clone https://github.com/UMass-LIDS/Proteus.git && cd Proteus`
 
 ### Conda environment setup
 
-You can setup the `conda` environment as follows:
+Once the repo is cloned, setup the `conda` environment as follows:
 
 `conda create --name proteus python=3.9.6`
 
@@ -34,7 +35,9 @@ You can setup the `conda` environment as follows:
 
 ### Gurobi license
 
-1. You can follow the instructions [here](https://www.gurobi.com/solutions/licensing/) to get a commercial or a free academic license for Gurobi, depending on your use.
+To complete the local installation, you need to obtain a Gurobi license as following.
+
+1. Follow the instructions [here](https://www.gurobi.com/solutions/licensing/) to get a commercial or a free academic license for Gurobi, depending on your use.
 
 2. Once you have obtained the license, Gurobi will provide a `gurobi.lic` file.
 
