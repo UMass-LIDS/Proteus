@@ -256,7 +256,7 @@ class Ilp(SchedulingAlgorithm):
             m.setParam("LogToConsole", 0)
 
             m.setParam('NonConvex', 2)
-            m.setParam('TimeLimit', 200)
+            m.setParam('TimeLimit', 500)
             m.setParam('MIPGap', 0.5)
             m.setParam('Threads', 12)
 
