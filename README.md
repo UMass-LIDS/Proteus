@@ -32,7 +32,7 @@ Once the repo is cloned, setup the `conda` environment as follows:
 ```bash
 conda create --name proteus python=3.9.6
 conda activate proteus`
-python -m pip install requirements.txt
+python -m pip install -r requirements.txt
 ``````
 
 ### Gurobi license
