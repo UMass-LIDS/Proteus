@@ -15,30 +15,26 @@ Running the simulator requires using a `config_file`. You can see examples of th
 
 ## End-to-end comparison
 
-To run an end-to-end comparison of Proteus with the baselines, run the following commands in order:
+To run an end-to-end comparison of Proteus with the baselines, run the following commands:
 
-`python run.py --config_file configs/zipf_exponential/proteus.json`
-
-`python run.py --config_file configs/zipf_exponential/clipper_lowacc.json`
-
-`python run.py --config_file configs/zipf_exponential/infaas.json`
-
-`python run.py --config_file configs/zipf_exponential/sommelier.json`
-
-`python plotting/endtoend.py`
+```bash
+python run.py --config_file configs/zipf_exponential/proteus.json
+python run.py --config_file configs/zipf_exponential/clipper_lowacc.json
+python run.py --config_file configs/zipf_exponential/infaas.json
+python run.py --config_file configs/zipf_exponential/sommelier.json
+python plotting/endtoend.py
+```
 
 Please note that it can take some time to run the simulations end-to-end. For example, it can take over an hour to run Proteus on the Twitter trace using an AWS `t2.micro` instance.
 
 ## Bursty trace experiment
 
-To recreate the results from Section 6.4 on the bursty trace, run the following commands in order:
+To recreate the results from Section 6.4 on the bursty trace, run the following commands:
 
-`python run.py --config_file configs/zipf_exponential_bursty/proteus.json`
-
-`python run.py --config_file configs/zipf_exponential_bursty/clipper_lowacc.json`
-
-`python run.py --config_file configs/zipf_exponential_bursty/infaas.json`
-
-`python run.py --config_file configs/zipf_exponential_bursty/sommelier.json`
-
-`python plotting/bursty.py`
+```bash
+python run.py --config_file configs/zipf_exponential_bursty/proteus.json
+python run.py --config_file configs/zipf_exponential_bursty/clipper_lowacc.json
+python run.py --config_file configs/zipf_exponential_bursty/infaas.json
+python run.py --config_file configs/zipf_exponential_bursty/sommelier.json
+python plotting/bursty.py
+```

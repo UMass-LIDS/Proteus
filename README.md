@@ -29,11 +29,11 @@ You can clone the GitHub repo using:
 
 Once the repo is cloned, setup the `conda` environment as follows:
 
-`conda create --name proteus python=3.9.6`
-
-`conda activate proteus`
-
-`python -m pip install requirements.txt`
+```bash
+conda create --name proteus python=3.9.6
+conda activate proteus`
+python -m pip install requirements.txt
+``````
 
 ### Gurobi license
 

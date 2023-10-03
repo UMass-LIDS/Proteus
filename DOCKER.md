@@ -20,13 +20,12 @@ This will run an interactive bash session on the Docker container.
 
 Once inside the interactive session, we can run the simulation using Proteus as well as the baselines. Use the following commands to do so:
 
-`python run.py --config_file configs/zipf_exponential/proteus.json`
-
-`python run.py --config_file configs/zipf_exponential/clipper_highacc.json`
-
-`python run.py --config_file configs/zipf_exponential/infaas.json`
-
-`python run.py --config_file configs/zipf_exponential/sommelier.json`
+```bash
+python run.py --config_file configs/zipf_exponential/proteus.json
+python run.py --config_file configs/zipf_exponential/clipper_highacc.json
+python run.py --config_file configs/zipf_exponential/infaas.json
+python run.py --config_file configs/zipf_exponential/sommelier.json
+```
 
 Please note that it can take some time to run the simulations end-to-end. For example, it can take over an hour to run Proteus on the Twitter trace using an AWS `t2.micro` instance.
 
