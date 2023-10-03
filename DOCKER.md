@@ -44,3 +44,15 @@ You can download the generated figures from the Docker container to your host ma
 `docker cp <container_id>:/figures/timeseries_together.pdf <local_path>/timeseries_together.pdf`
 
 Replace `<container_id>` with the Docker container ID (you can see this with `docker ps`), and `<local_path>` with the path on your local host machine where you want to copy the generated figure.
+
+## Bursty trace
+
+To recreate the results from Section 6.4 on the bursty trace, run the following commands:
+
+```bash
+python run.py --config_file configs/zipf_exponential_bursty/proteus.json
+python run.py --config_file configs/zipf_exponential_bursty/clipper_lowacc.json
+python run.py --config_file configs/zipf_exponential_bursty/infaas.json
+python run.py --config_file configs/zipf_exponential_bursty/sommelier.json
+python plotting/bursty.py
+```
