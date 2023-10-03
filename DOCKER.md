@@ -18,7 +18,7 @@ This will run an interactive bash session on the Docker container.
 
 ## Running Proteus and baselines
 
-Once inside the interactive session, we can run the simulation using Proteus as well as the baselines. Use the following commands to do so:
+Once inside the interactive session, we can run the simulation using Proteus as well as the baselines for the end-to-end evaluation on the Twitter trace (similar to Section 6.3). Use the following commands to do so:
 
 ```bash
 python run.py --config_file configs/zipf_exponential/proteus.json
