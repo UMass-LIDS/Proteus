@@ -5,9 +5,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-path = 'logs/throughput'
+path = 'logs/throughput/endtoend'
 
-logfile_list = [f'{path}/infaas_v2.csv', f'{path}/clipper.csv', f'{path}/sommelier.csv',
+logfile_list = [f'{path}/clipper_highacc.csv', f'{path}/infaas_v2.csv',
+                f'{path}/clipper_lowacc.csv', f'{path}/sommelier.csv',
                 f'{path}/ilp.csv']
 
 MARKERS_ON = True
@@ -16,7 +17,7 @@ hatches = ['-', '\\', '/', 'x', '+']
 markers = ['.', 's', 'v', '^', 'x', '+', '*']
 markersizes = [7, 3, 4, 4, 5, 6, 5]
 
-algorithms = ['INFaaS-Accuracy', 'Clipper', 'Sommelier', 'Proteus']
+algorithms = ['Clipper-HA', 'INFaaS-Accuracy', 'Clipper-HT', 'Sommelier', 'Proteus']
 
 colors = ['#729ECE', '#FF9E4A', '#ED665D', '#AD8BC9', '#67BF5C', '#8C564B',
           '#E377C2', 'tab:olive', 'tab:cyan']
@@ -143,20 +144,20 @@ axs[2, 0].set_xlabel('Time (min)', fontsize=12)
 
 axs[0, 1].set_ylabel('Avg. Throughput', fontsize=11)
 axs[0, 1].bar(algorithms, throughputs, label=algorithms, color=colors[1:],
-              hatch=hatches[1:], edgecolor='black')
+              hatch=hatches, edgecolor='black')
 axs[0, 1].set_xticks([])
 axs[0, 1].set_yticks(np.arange(0, 410, 100))
 
 axs[1, 1].set_ylabel('Max. Acc. Drop', fontsize=11)
 axs[1, 1].bar(algorithms, accuracy_drops, label=algorithms, color=colors[1:],
-              hatch=hatches[1:], edgecolor='black')
+              hatch=hatches, edgecolor='black')
 axs[1, 1].set_xticks([])
 axs[1, 1].set_yticks(np.arange(0, 21, 5))
 
 axs[2, 1].set_xlabel('Algorithm', fontsize=12)
 axs[2, 1].set_ylabel('SLO Violation Ratio', fontsize=11)
 axs[2, 1].bar(algorithms, slo_violation_ratios, label=algorithms, color=colors[1:],
-              hatch=hatches[1:], edgecolor='black')
+              hatch=hatches, edgecolor='black')
 axs[2, 1].set_yticks(np.arange(0, 0.41, 0.1))
 axs[2, 1].set_xticks([])
 

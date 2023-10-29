@@ -11,5 +11,6 @@
     "seed": 10,
     "solve_interval": 10,
     "short_run": false,
-    "log_to_file": true
+    "log_to_file": true,
+    "log_path": "bursty/infaas_v2.csv"
 }

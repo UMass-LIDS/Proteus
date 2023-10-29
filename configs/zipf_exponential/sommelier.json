@@ -6,10 +6,11 @@
     "static_allocation": "algorithms/sommelier_solutions/starting_optimized_new.txt",
     "job_scheduling": "canary_routing",
     "batching": "accscale",
-    "beta": 2,
-    "ewma_decay": 1.1,
+    "beta": 1.5,
+    "ewma_decay": 1.6,
     "fixed_seed": true,
     "seed": 10,
     "solve_interval": 10,
-    "log_to_file": true
+    "log_to_file": true,
+    "log_path": "endtoend/sommelier.csv"
 }
