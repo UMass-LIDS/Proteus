@@ -79,7 +79,7 @@ If you use this artifact or find it helpful, please cite our paper.
 @article{ahmad2024proteus,
   title={Proteus: A High-Throughput Inference-Serving System with Accuracy Scaling},
   author={Ahmad, Sohaib and Guan, Hui and Friedman, Brian D. and Williams, Thomas and Sitaraman, Ramesh K. and Woo, Thomas},
-  booktitle={28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 1 (ASPLOS ’24)},
+  booktitle={29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 1 (ASPLOS ’24)},
   year={2024},
   doi={https://doi.org/10.1145/3617232.3624849}
 }
